@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./src/main.js" defer></script>
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <h1>Bookshelf Apps</h1>
+    <div class="container">
+      <div class="form-card card">
+        <h2>Masukkan Buku Baru</h2>
+        <form id="inputBook">
+          <div class="input">
+            <label for="title">Judul</label>
+            <input id="title" type="text" required />
+          </div>
+          <div class="input">
+            <label for="author">Penulis</label>
+            <input id="author" type="text" required />
+          </div>
+          <div class="input">
+            <label for="year">Tahun</label>
+            <input id="year" type="number" required />
+          </div>
+          <div class="input-inline">
+            <input id="isComplete" type="checkbox" />
+            <label for="isComplete">Selesai dibaca</label>
+          </div>
+          <button class="btn" type="submit">Masukkan Buku ke Rak</button>
+        </form>
+      </div>
+
+      <section class="card search-book">
+          <div class="input">
+            <label for="search">Cari Judul Buku</label>
+            <input id="search" type="text" placeholder="Cari judul..." />
+          <div>
+      </section>
+
+      <section class="card">
+        <h2>Belum selesai dibaca</h2>
+        <div id="incompleteBookshelfList" class="book-list"></div>
+      </section>
+
+      <section class="card">
+        <h2>Selesai dibaca</h2>
+        <div id="completeBookshelfList" class="book-list"></div>
+      </section>
+    </div>
+  </body>
+</html>
